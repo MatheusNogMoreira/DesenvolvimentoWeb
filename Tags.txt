@@ -1,0 +1,12 @@
+Bold:negrito
+strong:negrito
+em:itálico
+i:itálico
+u: underline
+ul: lista não ordenada  <!--circle,square,disc-->
+li: item da lista
+ol: lista ordenada <!--1,a,I-->
+hr: linha
+height: altura
+width: largura
+a:links
