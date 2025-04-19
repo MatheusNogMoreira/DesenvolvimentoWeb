@@ -21,3 +21,6 @@ input type : entrada de dados para o formulário (type: text, button,submit,pass
 select & option : tipo em uma tabela
 textarea : area de texto um pouco maior para formulários
 entities html : Caracteres Especiais
+style: para css interno
+border: dimensão estilo(vários estilos) cor
+
