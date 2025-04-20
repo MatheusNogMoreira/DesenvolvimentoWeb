@@ -1,3 +1,5 @@
+=>HTML
+
 Bold:negrito
 strong:negrito
 em:itálico
@@ -21,6 +23,23 @@ input type : entrada de dados para o formulário (type: text, button,submit,pass
 select & option : tipo em uma tabela
 textarea : area de texto um pouco maior para formulários
 entities html : Caracteres Especiais
+
+=> CSS
+
 style: para css interno
 border: dimensão estilo(vários estilos) cor
+background-color: Mudança de cor de fundo;  
+background-image: url('/Geral/CSS/Imagens/yoshi.png');
+background-repeat: no-repeat; /*Repetição pode ser horizontal ou vertical*/
+/*background-attachment: fixed; /*Imagem se torna fixa ou acompanha a rolagem (scroll)*/
+background-position: center center; /*Em relação a horizontal e vertical*/
+background: blue url("/Geral/CSS/Imagens/yoshi.png"); /*Combinação de Imagem e cor de fundo*/
+link: permite o uso do css externo
+margin: espaçamento externo
+Padding: espaçamento interno
+float: elementos flutuantes - esquerda e direita
+clear: limpar campo flutuante
 
+Elementos Block: Ocupam toda a largura da tela
+Elemento Inline: largura depende do conteúdo,elemento um na frente do outro
+Elemento InBlock: largura depende do conteúdo, elemento fica na frente do outro
