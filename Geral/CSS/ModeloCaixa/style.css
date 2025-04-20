@@ -1,0 +1,25 @@
+.conteudo{
+    border: 1px solid red;
+    /*Os Espaçamentos são somados no tamanho da entidae*/
+    /*padding-top: 10px; /*Espaçamento superior
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;*/
+
+    /*Espaçamento Interno*/
+    padding: 20px 20px 20px 20px; /*Superior Direita Inferior Esquerda*/
+    /*Espaçamento Externo*/
+
+    margin: 20px 20px 20px 20px;
+
+    width: 150px;
+}
+
+#noticia{
+    background: blue;
+    border: 1px solid gray;
+    padding:10px
+}
+ h2{
+    margin: 0px;
+ }
