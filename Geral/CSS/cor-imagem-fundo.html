@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Cor e Imagem de Fundo</title>
+        <meta charset="utf-8">
+        
+        <style type="text/css">
+
+            h2{
+                /*background-color: #f2f2f2;*/
+                background-image: url('/Geral/CSS/Imagens/yoshi.png');
+                background-repeat: no-repeat; /*Repetição pode ser horizontal ou vertical*/
+                /*background-attachment: fixed; /*Imagem se torna fixa*/
+                background-attachment: fixed;
+                background-position: center center; /*Em relação a horizontal e vertical*/
+            }
+
+
+
+            .fundo{
+                /*background-color: gray;*/
+                background: blue url("/Geral/CSS/Imagens/yoshi.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center center;
+            }
+
+        </style>
+    
+    </head>
+    <body class="fundo">
+
+        <h2>Conteúdo</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, incidunt.</p>
+
+    </body>
+</html>
