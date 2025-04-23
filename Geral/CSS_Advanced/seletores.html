@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <style>
+            /*Seletor Universal*/
+            *{
+                border: 1px solid red;
+            }
+            /*Seletor de Texto*/
+            h1{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 1.2em;
+
+            }
+            /*Seletor de classe*/
+
+            .verde{
+                color:green;
+            }
+            p.verde{
+                color:green;
+                font-size: 2.0em;
+            }
+
+            /*Seletor de ID*/
+            #background{
+                background-color: blanchedalmond;
+            }
+
+            /*Seletor de Filho*/
+            /*li>a{
+                /*Para 'a' filhos de li
+                color:red;
+                text-decoration: none;
+            }*/
+
+            /*Seletor de descendente*/
+            li a{
+                color: green;
+            }
+
+            /*Seletor de Irmão adjacente*/
+            h1+p{
+                color: black;
+            }
+            /*Seletor de Irmão geral*/
+            h1~p{
+                color:pink;
+            }
+        </style>
+    </head>
+
+    <body id="background">
+
+        <div>
+            <!--H1 irmão de ambos p-->
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptas.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, provident.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nisi!</p>
+        </div>
+
+        <div>
+            <h1 class="verde">Tipos de Seletores</h1>
+            <p class="verde">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates facilis nostrum voluptatibus nam cum ipsum consequatur provident iusto unde omnis.</p>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <!--Filho de span e não de li-->
+                    <!--Usar seletor de descendente para resolver isso-->
+                    <span> <a href="">Sobre</a></span>
+                   
+                </li>
+            </ul>
+        </div>
+
+    </body>
+</html>
