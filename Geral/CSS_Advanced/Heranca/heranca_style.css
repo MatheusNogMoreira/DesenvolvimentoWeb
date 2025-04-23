@@ -1,0 +1,34 @@
+body{
+    color:red;
+    border: 1px solid blue;
+
+}
+/*
+/*O último é considerado, ao menos que seja usado !important 
+p{
+    color:blue !important;
+}
+
+p{
+    color:green;
+}*/
+
+/*Se um seletor for mais específico que outro a regra mais específica será aplicada*/
+
+*{
+    color:red;
+}
+
+h1{
+    color: blue;
+}
+
+/*+ Especifico ainda*/
+
+h1.verde{
+    color:green;
+}
+
+h1#amarelo{
+    color:yellow;
+}
