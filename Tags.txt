@@ -43,3 +43,6 @@ clear: limpar campo flutuante
 Elementos Block: Ocupam toda a largura da tela
 Elemento Inline: largura depende do conteúdo,elemento um na frente do outro
 Elemento InBlock: largura depende do conteúdo, elemento fica na frente do outro
+
+opacity: (Intervalo: 0 - 1) gera opacidade da imagem
+background-attachment: fixed;  /*Garante o paralax*/
