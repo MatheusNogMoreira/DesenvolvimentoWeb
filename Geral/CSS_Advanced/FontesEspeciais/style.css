@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "Ancient Medium";
+    src: url("../FontesEspeciais/fontes/Ancient-Medium.woff");
+}
+
+h1{
+    font-size: 6em;
+    font-family: "Ancient Medium";
+}
