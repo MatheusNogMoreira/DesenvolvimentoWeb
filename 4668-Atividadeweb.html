@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Cadastro</title>
+  <style>
+    *{
+        font-family: 'Times New Roman', Times, serif;
+        background: #f8f8f8;
+    }
+
+    textarea{
+        width: 25%;
+        height: 10em;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <h2>Formulário</h2>
+  <form method="post" action="#" class="form-section">
+    <label>Nome
+      <input type="text" name="nome" placeholder="Digite aqui...">
+    </label>
+
+    <br>
+
+    <label>E-mail
+      <input type="email" name="email" placeholder="Digite aqui...">
+    </label>
+
+    <br>
+
+    <label>Idade
+      <input type="number" name="idade" placeholder="Digite aqui...">
+    </label>
+
+    <br>
+
+    <label>Senha
+      <input type="password" name="senha" placeholder="Digite aqui..." required>
+    </label>
+
+    <br>
+
+    <label>Gênero</label>
+    <div class="radio-group">
+      <input type="radio" name="genero" value="masculino"> Masculino
+      <input type="radio" name="genero" value="feminino"> Feminino
+      <input type="radio" name="genero" value="outro"> Outro
+    </div>
+    <br>
+
+    <label>Interesses</label>
+    <div class="checkbox-group">
+      <input type="checkbox" name="interesses" value="tecnologia"> Tecnologia
+      <input type="checkbox" name="interesses" value="arte"> Arte
+      <input type="checkbox" name="interesses" value="esporte"> Esporte
+    </div>
+    
+    <br>
+    <label>Mensagem
+        <br>
+      <textarea name="mensagem" placeholder="Digite aqui..."></textarea>
+    </label>
+
+    <br>
+    <button type="submit" class="submit-btn">Enviar</button>
+    <button type="reset" class="reset-btn">Limpar</button>
+    <br>
+
+  </form>
+</body>
+</html>
+
