@@ -46,3 +46,35 @@ Elemento InBlock: largura depende do conteúdo, elemento fica na frente do outro
 
 opacity: (Intervalo: 0 - 1) gera opacidade da imagem
 background-attachment: fixed;  /*Garante o paralax*/
+box-sizing: border-box - Não contabiliza o valor do padding para um container
+background: linear-gradient(to top,red,green); - Para Degradês
+background: radial-gradient(yellow,green,blue); -Para Degradês
+text-shadow: 20px 20px 5px rgba(0,0,0,0.6); /*Movimentação(H e V) das sombras |blur| Sua cor
+box-shadow: 20px 20px 10px black; - (Posição | Espaçamento | cor)Sombra para caixa
+
+/*Tags de Animação*/
+@keyframes animacao-caixa{
+    from{
+        background: red;
+
+    }
+    to{
+        background: yellow;
+
+    }
+
+}
+animation-name: animacao-caixa;
+animation-duration: 5s;
+animation-delay: 3s;
+animation-iteration-count: 3;
+animation-direction: alternate;
+
+/*HTML5*/
+nav : barra de navegação
+fotter : 
+article e section 
+
+flex-shrink: Define a capacidade de redução de tamanho do item
+flex-grow: Define proporção de espaço ocupado por um item
+flex-basis: Indica o tamanho incial do flex item antes da distribuição do espaço restante
