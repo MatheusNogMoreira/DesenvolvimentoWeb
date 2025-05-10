@@ -1,0 +1,50 @@
+#conteudo{
+    background: #dcdcdc;
+    height: 600px;
+    display: flex;
+
+    /*flex-direction: row-reverse;
+    /*flex-wrap: nowrap; Pressiona os itens*
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;/*Alinhados por uma linha base*/
+}
+
+.item{
+    width: 200px;
+    height: 200px;
+    background: white;
+    border: 1px solid gray;
+    margin: 10px;
+    /*Define a capacidade de redução de tamanho do item*/
+    flex-shrink: 1;
+    /* flex-grow: Define proporção de espaço ocupado por um item*/
+    /*Indica o tamanho incial do flex item antes da distribuição do espaço restante*/
+    flex-basis: auto;
+}
+
+.ordem1{
+    /*order: 1;
+    flex-grow: 1; /*Sem tamanho fixo - Ocupa o espaçamento do container*/
+    flex-shrink: 1;
+
+}
+
+
+.ordem2{
+    /*order: 2;
+    flex-grow: 2;*/
+    flex-shrink: 2;
+}
+
+
+.ordem3{
+    /*order: 3;*/
+    flex-shrink: 3;
+}
+
+
+.ordem4{
+    /*order: 4;*/
+    flex-shrink: 4;
+}
