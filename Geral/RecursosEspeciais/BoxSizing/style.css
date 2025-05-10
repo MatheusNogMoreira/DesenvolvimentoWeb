@@ -1,0 +1,21 @@
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 50px;
+    box-sizing: border-box; /*Não acrescenta o valor do padding*/
+    /*-moz-border-radius: 10px 50px 80px 10px; /*Versões de navegadores + antigos*/
+    border-radius: 10px 50px 80px 10px;
+}
+
+#caixa2{
+    width: 400px;
+    height: 300px;
+    background: #b9c941;
+}
+
+.arredondamento{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
