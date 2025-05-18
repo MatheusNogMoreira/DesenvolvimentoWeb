@@ -78,3 +78,9 @@ article e section
 flex-shrink: Define a capacidade de redução de tamanho do item
 flex-grow: Define proporção de espaço ocupado por um item
 flex-basis: Indica o tamanho incial do flex item antes da distribuição do espaço restante
+
+=================================================
+
+viewport: área de visualização do dispositivo.
+initial-scale: define o zoom inicial
+shrink-to-fit: padrão - se passar do viewport , o conteúdo encolhe - 
