@@ -1,0 +1,6 @@
+Ctrl + Shift + i
+
+chamar arquivo externo:
+<script src="meu_script.js"></script>
+
+Ou dentro do html5: <script></script>
