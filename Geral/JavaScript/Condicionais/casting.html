@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <title>JavaScript - Casting</title>
+        <!--Pode ser no body ou head - é processado primeiro no head-->
+        <script>
+
+            var primeira_variavel = prompt('Digite um número:')
+            var segunda_variavel = prompt('Digite outro número: ')
+            
+            //Junta duas variáveis em caso de string 
+            console.log(primeira_variavel + segunda_variavel)
+
+            primeira_variavel = parseInt(primeira_variavel)
+            segunda_variavel = parseInt(segunda_variavel)
+
+            //Soma os valores
+            console.log(primeira_variavel + segunda_variavel)
+
+            primeira_variavel = parseFloat(primeira_variavel)
+            segunda_variavel = parseFloat(segunda_variavel)
+            
+            //Preserva o flutuante
+            console.log(primeira_variavel + segunda_variavel)
+
+        </script>
+    </head>
+
+    <body>
+        
+        <!--<script src="script.js"></script>-->
+    </body>
+</html>

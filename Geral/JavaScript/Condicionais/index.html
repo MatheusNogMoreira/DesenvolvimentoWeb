@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <title>JavaScript - IF & Else</title>
+        <!--Pode ser no body ou head - é processado primeiro no head-->
+        <script>
+            if(false){
+                document.write('Entrou dentro do bloco If')
+            }else{
+                 document.write('Entrou dentro do bloco else')
+            }
+
+            //Tipo e valores iguais
+            if(2 === 2.0){
+                document.write('Valores e Tipos iguais')
+            }
+            
+            if(2==2.0){
+                document.write('Efeito do Tipo Number')
+            }
+            //Tipo e valores diferentes
+            if(1 !== '2'){
+                document.write('Não identicos')
+            }
+
+            var media = 6
+            var nota = prompt('Digite a Nota do Aluno') //Recebe uma string
+            //Converte para number adequadamente
+            if(nota>=media){
+                document.write('Aprovado')
+            }else{
+                document.write('Reprovado')
+            }
+
+
+
+        </script>
+    </head>
+
+    <body>
+        
+        <!--<script src="script.js"></script>-->
+    </body>
+</html>
