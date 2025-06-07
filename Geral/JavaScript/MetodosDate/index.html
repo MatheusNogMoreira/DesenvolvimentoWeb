@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - Datas</title>
+    <script> 
+        // Objeto Date
+        var data = new Date();
+        
+        document.writeln(data.getDate());
+        document.writeln("/");
+        document.writeln(data.getMonth() + 1); // mês começa do 0
+        document.writeln("/");
+        document.writeln(data.getFullYear());
+        
+        document.writeln("<br>");
+        document.write(data.toString());
+        
+        document.writeln("<br>");
+        data.setDate(data.getDate() + 360);
+        document.writeln("<br> <hr>");
+        document.write(data.toString());
+
+        data.setMonth(data.getMonth() + 1);
+        document.writeln("<br> <hr>");
+        document.write(data.toString());
+
+        data.setFullYear(data.getFullYear() + 2);
+        document.writeln("<br> <hr>");
+        document.write(data.toString());
+        
+
+        // 0 é janeiro
+        var primeira_data = new Date(2012, 1, 21); // mês de fevereiro (mês 1)
+        var segunda_data = new Date(2021, 5, 3);    // mês de junho (mês 5)
+
+        document.writeln("<br> <hr>");
+        document.writeln(primeira_data.toString());
+        document.writeln("<br> <hr>");
+        document.writeln(segunda_data.toString());
+
+        document.writeln("<br> <hr>");
+        document.writeln(primeira_data.getTime());
+        document.writeln("<br> <hr>");
+        document.writeln(segunda_data.getTime());
+
+        document.writeln("<br> <hr>");
+        document.writeln(Math.abs(primeira_data.getTime() - segunda_data.getTime()));
+
+        document.writeln("<br> <hr>");
+
+        var milissegundos = Math.abs(primeira_data.getTime() - segunda_data.getTime());
+        var milissegundosdia = (1 * 24 * 60 * 60 * 1000);
+        document.writeln(Math.ceil(milissegundos / milissegundosdia));
+    </script>
+</head>
+<body>
+</body>
+</html>
