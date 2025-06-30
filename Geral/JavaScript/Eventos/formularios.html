@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - Eventos Formulários</title>
+    <script>
+      //Funciona Só para a parte do cliente - browser
+      //Ações capturadas do usuário
+      //declarados como propriedade
+
+      function evento(){
+        alert('Evento Novo')
+      }
+
+
+   
+   </script>
+</head>
+    <body>
+        <input type="text" onfocus="console.log('Foco')">
+        <br>
+        <br>
+
+        <input type="text" onblur="console.log('Perda de foco')">
+
+        <br>
+        <br>
+
+        <select onchange="console.log('Mudança de opção')">
+            <option> Selecione</option>
+            <option value="1">Primeira Opção</option>
+            <option valeu="2">Segunda Opção</option>
+        </select>
+
+      
+
+    </body>
+</html>

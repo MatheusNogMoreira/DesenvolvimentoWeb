@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - Eventos Teclados</title>
+    <script>
+      //Funciona Só para a parte do cliente - browser
+      //Ações capturadas do usuário
+      //declarados como propriedade
+
+      function evento(){
+        alert('Evento Novo')
+      }
+
+
+   
+   </script>
+</head>
+    <body>
+        <h1>Para qualquer tecla</h1>
+        <p>Down</p>
+        <input onkeydown="evento()" type="text">
+
+        <br>
+        <br>
+        <p>Press -  funciona só com caracteres/espaços</p>
+        <input onkeypress="evento()" type="text">
+
+        <br>
+        <br>
+
+        <p>Up</p>
+
+        <input onkeyup="evento()" type="text">
+
+        <br>
+        <br>
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - Eventos</title>
+    <script>
+      //Funciona Só para a parte do cliente - browser
+      //Ações capturadas do usuário
+      //declarados como propriedade
+
+      function evento(){
+        alert('Evento Novo')
+      }
+
+
+   
+   </script>
+</head>
+    <body>
+        <h1>Onclick</h1>
+        <br>
+        <div onclick="alert('Evento Ocorreu')" style="background: #ccc; height: 150px; width: 150px;"></div>
+        <div onclick="evento()" style="background: greenyellow; height: 150px; width: 150px; margin-top: 30px;"></div>
+
+        <h1>ondblclick</h1>
+        <br>
+
+        <div ondblclick="alert('Evento Ocorreu')" style="background: #ccc; height: 150px; width: 150px ;margin-top:30px;"></div>
+        <div ondblclick="evento()" style="background: greenyellow; height: 150px; width: 150px; margin-top: 30px;"></div>
+   
+        <h1>onmouseup</h1>
+
+        <div onmouseup="alert('Evento Ocorreu')" style="background: #ccc; height: 150px; width: 150px; margin-top:30px;"></div>
+        <div onmouseup="evento()" style="background: greenyellow; height: 150px; width: 150px; margin-top: 30px;"></div>
+
+        <h1>onmouseover</h1>
+
+        <div onmouseover ="alert('Evento Ocorreu')" style="background: #ccc; height: 150px; width: 150px; margin-top:30px;"></div>
+        <div onmouseover ="evento()" style="background: greenyellow; height: 150px; width: 150px; margin-top: 30px;"></div>
+    
+        <h1>onmouseout</h1>
+        <div onmouseout ="alert('Evento Ocorreu')" style="background: #ccc; height: 150px; width: 150px; margin-top:30px;"></div>
+        <div onmouseout ="evento()" style="background: greenyellow; height: 150px; width: 150px; margin-top: 30px;"></div>
+    
+        <h1>Combinação</h1>
+        <br> 
+        <div onclick="alert('Evento Ocorreu')"onmouseout="evento()" style="background: #ccc; height: 150px; width: 150px;"></div>
+
+    </body>
+</html>

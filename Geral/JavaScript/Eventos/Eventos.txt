@@ -1,0 +1,26 @@
+Eventos que podem ser adicionados pelo mouse:
+
+onclick - ocorre com um click
+ondblclick - ocorre com dois cliques 
+onmouseup - ocorre quando o click é liberado(quando deixa de pressionar o mouse)
+onmouseover - ocorre com o sobreamento de um componente
+onmouseout - ocorre quando o mouse sai da área do elemento 
+
+Podem ser combinados
+
+Teclados 
+ 
+onkeydown - pressionar uma tecla
+onkeypress - quando a tecla é liberado - funciona apenas com caracteres
+onkeyup - quando ela é segurada
+
+Janela/Frame
+
+onresize - quando a pagina é redimensionada
+onscroll - quando o scroll é utilizado
+
+Formularios
+
+onfocus -  quando recebe o foco do mouse
+onblur - quando perde o foco
+onchange - estado do elemento é modificado
