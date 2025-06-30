@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript - DOM</title>
+    <style>
+        .estilo1{
+            background: #FF0000;
+            color:#FFF;
+        }
+        .estilo2{
+            width: 400px;
+            height: 50px;
+            background-color: #FF0000;
+            text-align: center;
+            font-size: 25px;
+            color:#FFF;
+            padding: 25px;
+
+        }
+    </style>
+</head>
+    
+    <body>
+        <!--<input
+            type="text"
+            placeholder="Digite seu nome"
+            id="nome_usuario"
+            class="campo_texto"
+            name="nome"
+        >
+
+        -Cada id é unico por página-->
+
+        <br>
+        <br>
+
+        <input type="text" placeholder="Digite um caracter aqui" id="entrada" onkeyup="distribuirCaracter()">
+        <br>
+        <br>
+        <span>Letras:</span>
+        <input type="text" disabled="disabled" id="letras">
+
+        <span>Números: </span>
+        <input type="text" disabled="disabled" id="numeros">
+
+        <br>
+        <br>
+
+        <!--Manipulação de estilos-->
+
+        <button type="button" onclick="modificar('#FF0000')">Vermelho</button>
+        <button type="button" onclick="modificar('#00FF00')">Verde</button>
+        <button type="button" onclick="modificar('#0000FF')">Azul</button>
+    
+
+        <h3>Manipulando Estilo</h3>
+        <div style="border:solid 1px #000; width: 100px; height: 100px;" id="quadrado"></div>
+
+        <!--Manipulação de Classes-->
+
+        <div id="mensagem" class="estilo1">Modificando a classe do elemento</div>
+        <br>
+        <br>
+        <button type="button" onclick="modificaClasse()">Aplicar Classe</button>
+        
+        <script>
+
+        function modificaClasse(){
+            document.getElementById('mensagem').className = 'estilo2'
+        }
+
+        function modificar(cor){
+             document.getElementById('quadrado').style.background = cor
+            
+        }
+
+        function distribuirCaracter(){
+            var caracter = (document.getElementById('entrada').value)
+            //limpar o campo de digitação
+
+            document.getElementById('entrada').value = ''
+
+            switch(caracter){
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    document.getElementById('numeros').value = caracter   
+                    break
+                default:
+                    document.getElementById('letras').value += caracter
+                    break
+            }
+        }
+
+        //Api que permite o acesso via JS aos elementos da página
+        //Ordem de hierarquia em um arquivo html, tags pais e filhos(head -> title)
+        //sempre retorna elemento único
+        console.log(document.getElementById('nome_usuario'))
+
+        console.log(document.getElementsByTagName('input'))
+
+        console.log(document.getElementsByClassName('campo_texto'))
+
+
+        console.log(document.getElementsByName('campo_texto'))
+        </script>
+    </body>
+</html>
