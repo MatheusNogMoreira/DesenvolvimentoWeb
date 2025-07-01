@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <title>JavaScript - Estruturas de Repetições</title>
+    </head>
+
+    <body>
+
+        <h1>Exercícios Com Estruturas de Repetições</h1>
+        <script>
+
+            var x = 1
+            document.write(x + '<br>')
+            while(x<=10){
+                
+                x++
+                if(x===5){
+                    //document.write('Fim')
+                    //break //encerra a repetição
+
+                    continue //ignora o comando a seguir e passa o controle para a instrução do bloco
+                }
+
+                document.write(x + '<br>')
+                
+                //x++ reposicionar o elemento 
+            }
+
+            // do-while
+            document.write('<br>')
+            var y = 10
+            do{
+                document.write('Valor de y: ' + y + '<br>')
+                y = y + 10
+
+            }while(y<50)
+
+            //for 
+            document.write('<br>')
+            for(var i = 1; i<= 10; i++){
+                document.write((1+(i*4)) + '<br>')
+            }
+
+            //com arrays
+
+            document.write('<br>')
+            var array = [1,2,3,4,5,6,7,8,9,10]
+            var somatorio = 0
+            for(var i = 0;i<array.length;i++){
+                somatorio = somatorio + array[i]
+            }
+
+            document.write('Somatório do array: ' + somatorio)
+
+            //Laços entrelaçados - Tabuada
+            document.write('<br>')
+            for(var i = 1;i<=10;i++){
+                for(var j = 1;j<=10;j++){
+                    document.write(i + '*' + j + ' = ' + (i*j) + '<br>')
+                }
+                document.write('<br>')
+            }
+
+            //for in
+            document.write('<br>')
+            var listaConvidados = ['Jorge','Jamilton','José','Ana','Maria']
+
+            console.log(listaConvidados)
+            for(var x in listaConvidados){ //executar até seja undefined
+                document.write('Indice[ ' + x +']: ' + listaConvidados[x])
+            }
+
+
+            //for each - atua como função - recebe função de callback *function(valor,indice, array) - logica para ser executada com cada indice*
+            document.write('<br>')
+
+            listaConvidados.forEach(function(valor, indice, array){
+                console.log('indice ' + indice + ' I valor: ' + valor);
+                if(valor === 'Jorge'){ // Use === para comparação estrita
+                    array[indice] = 'Matheus';
+                }
+            });
+
+        </script>
+    </body>
+</html>
