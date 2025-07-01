@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <title>JavaScript - Array</title>
+        <script>
+
+        //Estilo de Declaração
+        var array_exemplo = Array();
+
+        for(var i = 0;i<10;i++){
+            array_exemplo[i] = (i*i) + 2*i;
+            console.log(array_exemplo[i]);
+        }
+
+        //segundo tipo de declaração
+        var segundo_array = [];
+
+        segundo_array[0] = true;
+        segundo_array[1] = 'Matheus';
+        segundo_array['x'] = 26052003;
+        console.log(segundo_array['x']);
+        
+        //terceiro tipo de declaração
+        var lista = ['M','A','T','H','E','U','S'];
+
+        //lenght - funciona perfeitamente para ordenações numéricas
+        console.log(lista.length)
+
+        console.log(segundo_array.length) //retorna dois
+
+        //Métodos para adição e remoção
+
+        var lista_frutas = Array()
+        lista_frutas[0] = 'Banana'
+        lista_frutas[1] = 'Maça'
+
+        //adiciona no final
+        lista_frutas.push('Uva')
+
+        
+        console.log(lista_frutas) //banana maça uva
+
+        //adiciona no inicio
+        lista_frutas.unshift('Melão')
+
+        console.log(lista_frutas) // melao banana maça uva
+
+        //excluir no final
+
+        lista_frutas.pop()
+
+        //excluir no inicio
+        lista_frutas.shift()
+
+        console.log(lista_frutas) // banana maça
+
+        //métodos pesquisa
+
+        var nova_lista = ['N','O','G','U','E','I','R','A']
+        //difere maisculas de minusculas
+        if(nova_lista.indexOf('O') === -1){
+            console.log('Elemento não existe')
+        }else{
+            console.log('Elemento está na posição ' + nova_lista.indexOf('O'))
+        }
+
+        //Ordenação de elementos - apenas para ordenações numericas
+
+        console.log(nova_lista.sort())
+
+
+        
+
+        </script>
+    </head>
+
+    <body>
+
+        <h1>Exercícios Com Arrays</h1>
+        
+        
+    </body>
+</html>
