@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js">
+            
+        </script>
+
+        <script type="text/babel">
+
+            //constante mantém seu valor durante todo o código
+
+            const valor = 'Matheus'
+            // influenciadas no escopo
+            document.write('Escopo global: ' + valor + '<br>')
+
+            function x(){
+                const valor = 'Nogueira'
+                document.write('Escopo local: ' + valor + '<br>')
+            }
+
+            x()
+
+            document.write('Escopo global: ' + valor + '<br>')
+           
+        </script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
