@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js">
+            //compilador para código escrito em ES6 para ES5
+            //Script para a utlização do babel - configuração inicial - carrega babel.min.js
+        </script>
+
+        <script type="text/babel">
+            const getMessage = () => "Hello World";
+            document.getElementById('output').innerHTML = getMessage();
+        </script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
