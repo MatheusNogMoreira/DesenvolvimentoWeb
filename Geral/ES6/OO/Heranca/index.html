@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>OO - Herança</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+            class Animal {
+                constructor(cor, tamanho) {
+                    this.cor = cor;
+                    this.tamanho = tamanho;
+                }
+
+                dormir() {
+                    document.write('O animal está dormindo. <br>');
+                }
+            }
+
+            class Cachorro extends Animal {
+                constructor(cor, tamanho, orelhas) {
+                    super(cor, tamanho);
+                    this.orelhas = orelhas;
+                }
+
+                correr() {
+                    document.write('O cachorro está correndo! <br>');
+                }
+
+                rosnar() {
+                    document.write('O cachorro está rosnando! <br>');
+                }
+            }
+
+            class Passaro extends Animal {
+                constructor(cor, tamanho, bico) {
+                    super(cor, tamanho);
+                    this.bico = bico;
+                }
+
+                voar() {
+                    document.write('O passaro está voando! <br>');
+                }
+            }
+
+            document.write('<h2>Instanciando e testando:</h2>');
+
+            const meuCachorro = new Cachorro('Caramelo', 'Médio', 'Grandes');
+            document.write('Meu cachorro é ' + meuCachorro.cor + ', tem tamanho ' + meuCachorro.tamanho + ' e orelhas ' + meuCachorro.orelhas + '. <br>');
+            meuCachorro.dormir(); 
+            meuCachorro.correr(); 
+            meuCachorro.rosnar(); 
+            document.write('<hr>');
+
+            const meuPassaro = new Passaro('Azul', 'Pequeno', 'Curto');
+            document.write('Meu pássaro é ' + meuPassaro.cor + ', tem tamanho ' + meuPassaro.tamanho + ' e bico ' + meuPassaro.bico + '. <br>');
+            meuPassaro.dormir(); 
+            meuPassaro.voar();    
+            document.write('<hr>');
+
+            const umAnimalQualquer = new Animal('Verde', 'Grande');
+            document.write('Um animal qualquer é ' + umAnimalQualquer.cor + ' e tem tamanho ' + umAnimalQualquer.tamanho + '. <br>');
+            umAnimalQualquer.dormir();
+            document.write('<hr>');
+
+
+        </script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
