@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js">
+            //compilador para código escrito em ES6 para ES5
+            //Script para a utlização do babel - configuração inicial - carrega babel.min.js
+        </script>
+
+        <script type="text/babel">
+
+            var serie = 'Breaking Bad'
+            //será visível dentro do escopo de funções e blocos
+
+            function x(){
+                console.log(serie)
+                if(true){
+                    var nova_var = 'HxH' //utilizando var ela supera seu escopo atual - nesse caso de função
+                    console.log('Bloco dentro da função: ' + serie)
+                }
+                console.log(nova_var)
+            }
+
+            //let preserva o escopo
+            if(true){
+                let newserie ='Friends'
+            }
+            //console.log(newserie) -> retorna erro - utilizar let, mais intuitivo
+
+        </script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
