@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Adição a funções</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+
+            //Arrow Fuction
+
+            //let quadrado = function(x){
+              //  return x*x
+            //}
+
+            document.write( quadrado(3))
+
+            let quadrado = (x) =>{
+                //equivalente a definição anterior
+                return x * x
+            }
+
+            let soma = (x,y) =>{
+                return x+y
+            }
+
+            let parOuimpar = (numero) =>{
+                if(numero % 2 ===0){
+                    return 'par'
+                }else{
+                    return 'impar'
+                }
+            }
+
+            document.write(parOuimpar(7))
+
+        </script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
