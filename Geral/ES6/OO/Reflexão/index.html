@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <title>OO - Reflexão</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+            //modelo procedural
+            let cadeiras = Array()
+
+            cadeiras[0] = Array()
+            cadeiras[0]['qtde_pernas'] = 4
+            cadeiras[0]['giratoria'] = false
+            cadeiras[0]['cor'] = 'azul'
+
+            cadeiras[1] = Array()
+            cadeiras[1]['qtde_pernas'] = 1
+            cadeiras[1]['giratoria'] = true
+            cadeiras[1]['cor'] = 'vermelha'
+
+            function girar_cadeira(indice){
+                if(cadeiras[indice]['giratoria']===true){
+                    document.write('girou! <br>')
+                }else{
+                    document.write('cadeia não é giratória! <br>')
+                }
+            }
+
+            //OO
+
+            class Cadeira{
+                constructor(qtde_pernas, giratoria,cor){
+                    this.qtde_pernas = qtde_pernas
+                    this.giratoria = giratoria
+                    this.cor = cor
+                }
+
+                girarCadeira(){
+                    if(this.giratoria===true){
+                        document.write('girou! <br>')
+                    }else{
+                         document.write('cadeia não é giratória! <br>')
+                    }
+                }
+            }
+            let cadeira = new Cadeira(4,false,'azul')
+            cadeira.girarCadeira()
+
+            let cadeiras = Array()
+            cadeiras.push(new Cadeira(4,true,'vermelha'))
+            cadeiras.push(new Cadeira(4,true,'azul'))
+
+
+
+        </script>
+    </head>
+
+    <body>
+        <div id="output"></div>
+    </body>
+</html>
